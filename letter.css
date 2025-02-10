@@ -1,0 +1,43 @@
+body {
+    background-image: url(formal_letter.png);
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.letter-box {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: 2px  rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+    padding: 20px; 
+    width: 80%; 
+    margin: 20px auto; 
+    text-align: left; 
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: ascend 1s ease-out forwards; 
+}
+
+address {
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: large;
+    line-height: 1.6; 
+    margin: 10px ;
+}
+@keyframes ascend {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
